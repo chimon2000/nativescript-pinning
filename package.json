@@ -1,0 +1,36 @@
+{
+  "name": "nativescript-pinning",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "A NativeScript plugin to do SSL Pinning",
+  "repository": "https://github.com/chimon2000/nativescript-pinning",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "android": "2.0.0"
+    }
+  },
+  "scripts": {
+    "release": "standard-version",
+    "compile": "tsc",
+    "prepublish": "npm run compile",
+    "demo": "cd demo & tns emulate android",
+    "predemo": "cd demo & tns plugin remove nativescript-pinning & tns plugin add .. & cd .."
+  },
+  "keywords": [
+    "NativeScript",
+    "TypeScript",
+    "Pinning",
+    "Security",
+    "Android"
+  ],
+  "author": "Ryan Edge",
+  "dependencies": {},
+  "devDependencies": {
+    "standard-version": "^4.0.0",
+    "tns-core-modules": "^2.5.1",
+    "tns-platform-declarations": "^2.5.0",
+    "typescript": "^2.0.10"
+  }
+}
